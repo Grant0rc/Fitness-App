@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.bg-beige {
+  background-color: #F5EBDD;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.radius{
+  border-radius: 5px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
