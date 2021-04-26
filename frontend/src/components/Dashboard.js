@@ -2,14 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import GlobalStyle from '../globalStyles';
-//import ProgrammeImg from "../images/DashboardImg";
+import Image from "./img.js";
 
 
 
-const DashboardContainer = styled.div`
-    padding: 0 22px 0 17px;
-    background-color: white;        //variable here
-    `
 
 const Greeting = styled.h1`
     font-size: 36px;
@@ -20,11 +16,22 @@ const Greeting = styled.h1`
 
 const YourWorkout = styled.h2`
     font-size: 24px;
-    margin-bottom: 10px;
+    line-height: 24px;
     `
 
 const WorkoutContainer = styled.div `
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 10px;
+`
 
+const Trainingsplan = styled.p `
+    font-size: 12px;
+`
+
+const WorkoutInfo = styled.p `
+    font-size: 16px;
 `
 
 
@@ -32,12 +39,23 @@ function Dashboard() {
     return (
         <div>
         <GlobalStyle/>
-        <DashboardContainer>
+        <main>
             <Greeting>
-                Guten Morgen, User
+                Guten
+                <br/>
+                Morgen,
+                <br/>
+                User
             </Greeting>
-            <YourWorkout>Dein Workout Heute:</YourWorkout>
-        </DashboardContainer>
+            <WorkoutContainer>
+            <YourWorkout>Dein Workout Heute</YourWorkout>
+            <Trainingsplan>Trainingsplan</Trainingsplan>
+            </WorkoutContainer>
+            <Image/>
+            <WorkoutInfo>Titel des Workouts</WorkoutInfo>
+            <WorkoutInfo>Titel des Programms</WorkoutInfo>
+            <p>XXX kcal - 26min - Beweglichkeit</p>
+        </main>
         <Navbar/>
         </div>
     )
