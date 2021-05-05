@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from 'react-router-dom';
 
 const Container = styled.div `
     display: flex;
@@ -13,12 +14,14 @@ const Container = styled.div `
 
 `
 
-function WorkoutContainer() {
+function WorkoutContainer(props) {
     return (
         <div>
+            <Link to="/Program">
             <Container>
-                <h2>Titel des Programms</h2>
+                <h2>{props.title}</h2>
             </Container>
+            </Link>
         </div>
     )
 }

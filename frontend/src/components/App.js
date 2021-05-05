@@ -2,7 +2,10 @@
 import './App.css';
 import Dashboard from './Dashboard.js';
 import Browse from './Browser';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Program from './Program.js';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+//import { ThemeProvider } from 'styled-components';
+//import Theme from './components/Theme';
 
 function App() {
   return (
@@ -10,6 +13,7 @@ function App() {
     <div>
       <Route exact path="/" component={Dashboard}/>
       <Route exact path="/Browse" component={Browse}/>
+      <Route exact path="/Program" component={Program}/>
     </div>
     </Router>
   );

@@ -21,7 +21,7 @@ const ButtonContainer = styled.div `
     text-decoration: none;
 `
 
-function Navbar() {                     //svg's to be put into a link component later
+function Navbar() {
     return (
         <div>
             <NavbarElements>

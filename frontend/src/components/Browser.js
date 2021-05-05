@@ -32,11 +32,11 @@ function Browser() {
         <BrowseHeader>Browse</BrowseHeader>
         <BrowseFilter>Filter</BrowseFilter>
         <WorkoutList>
-        <WorkoutContainer/>
-        <WorkoutContainer/>
-        <WorkoutContainer/>
-        <WorkoutContainer/>
-        <WorkoutContainer/>
+        <WorkoutContainer title="100 Pushups Challenge"/>
+        <WorkoutContainer title="100 Sit-Ups Challenge"/>
+        <WorkoutContainer title="10min Planks Challenge"/>
+        <WorkoutContainer title="100 Kartoffelchips"/>
+        <WorkoutContainer title="100x im Kreis drehen"/>
         </WorkoutList>
         </main>
         <Navbar/>
